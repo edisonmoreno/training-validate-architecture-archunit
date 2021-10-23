@@ -12,3 +12,6 @@ include ':bancolombia-service'
 project(':bancolombia-service').projectDir = file('./infrastructure/driven-adapters/bancolombia-service')
 include ':mongo-repository'
 project(':mongo-repository').projectDir = file('./infrastructure/driven-adapters/mongo-repository')
+include 'test:unit-test'
+findProject(':test:unit-test')?.name = 'unit-test'
+
